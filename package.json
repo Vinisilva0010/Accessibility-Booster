@@ -1,0 +1,52 @@
+{
+  "name": "chrome-ai-nextjs",
+  "version": "1.0.0",
+  "private": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "ext:build": "npm run build",
+    "ext:dev": "concurrently \"npm run dev\" \"npm run ext:watch\"",
+    "ext:watch": "npm run build --watch"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  }
+}
